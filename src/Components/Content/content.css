@@ -1,0 +1,13 @@
+.content {
+    width: 100vw;
+    height: calc(100vh - var(--header-height));
+    background: url('background.jpg') no-repeat center/cover;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.content__calendar-container {
+    width: 704px;
+    height: 100%;
+    background-color: #272829;
+}
