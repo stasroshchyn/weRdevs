@@ -27,6 +27,9 @@
         display: none;
     }
 
+    &__menu {
+        z-index: 3;
+    }
     &__menu ul {
         margin: 0;
         padding: 0;
