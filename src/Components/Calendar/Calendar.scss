@@ -57,11 +57,12 @@
 
     &__weekday {
         @extend %tableCell;
+        cursor: auto !important;
     }
 
     &__day {
         @extend %tableCell;
-        font-size: 17px;
+        font-size: 17px !important;
 
         &:hover {
             background-color: rgba(255, 255, 255, 0.2);
@@ -75,6 +76,12 @@
                 border: 2px solid white;
             }
         }
+
+        &_out {
+            color: #3D3D3D !important;
+        }
+
+
     }
 }
 

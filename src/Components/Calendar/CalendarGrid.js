@@ -18,6 +18,8 @@ const CalendarGrid = ({currentDate, handleCellClick}) => {
 
 	const calendarDays = getCalendarDays(currentDate),
 		  date = new Date();
+	
+	console.log(calendarDays);
 
 	return (
     	<div className="calendar__body">
@@ -25,9 +27,18 @@ const CalendarGrid = ({currentDate, handleCellClick}) => {
 				<div
 					key={idx}
 					onClick={onClick(cellData)}
-					className={`calendar__day ${(date.getDate() == cellData.dayNumeric) && (date.getFullYear() == cellData.year) && (date.getMonth() == cellData.monthNumeric) ? 'calendar__day_active' : ''}`}
+					className={
+						`calendar__day
+						${
+							(date.getDate() === cellData.dayNumeric) && (date.getFullYear() === cellData.year) && (date.getMonth() === cellData.monthNumeric) ? 'calendar__day_active' :
+							(currentDate.getMonth() - 1) === cellData.monthNumeric ? 'calendar__day_out' :
+							(currentDate.getMonth() + 1) === cellData.monthNumeric ? 'calendar__day_out' :
+							''
+						}
+						`
+					}
 				>	
-						{cellData.dayNumeric}
+					{cellData.dayNumeric}
 				</div>
         	))}
     	</div>
