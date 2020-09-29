@@ -24,6 +24,7 @@
         white-space: pre-line;
 
         & h1 {
+            display: block;
             text-align: end;
             margin: 193px 0 0 0;
             width: 520px;
@@ -34,6 +35,7 @@
         }
 
         & h2 {
+            display: block;
             text-align: end;
             margin: 45px 0 0 0;
             width: 554px;
@@ -125,7 +127,7 @@
         justify-content: space-between;
         align-items: center;
         &__title {
-            padding: 40px 0 40px 0;
+            padding: 70px 0 40px 0;
             margin: 0;
             align-items: center;
 
@@ -151,13 +153,13 @@
         &__title {
 
             & h1 {
-                font-size: 25px;
-                width: 280px;
+                font-size: 26px;
+                width: 100%;
             }
 
             & h2 {
                 font-size: 19px;
-                width: 220px;
+                width: 100%;
             }
         }
     }

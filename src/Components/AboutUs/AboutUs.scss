@@ -108,11 +108,12 @@
 
 @media screen and (max-width: 500px) {
     .about-us {
-        width: 400px;
+        width: 80%;
 
         & h2 {
-            padding-top: 0px;
+            padding-top: 10px;
             font-size: 22px;
+            text-align: center;
         }
 
         &__content {
